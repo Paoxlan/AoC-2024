@@ -65,7 +65,6 @@ void calculateMiddlePageNumbers(const Rules *rules, std::string ruleLine) {
         const int page = pages[index];
         std::cout << "Swapping " << page << " with " << previousPage << std::endl;
         std::iter_swap(index + pages.begin() - 1, pages.begin() + index);
-        if (page == 0) exit(1);
     }
 
     for (int i = 0; i < pages.size(); i++) {
